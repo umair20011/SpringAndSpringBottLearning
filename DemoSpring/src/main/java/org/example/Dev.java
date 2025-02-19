@@ -2,6 +2,7 @@ package org.example;
 
 public class Dev {
 
+    private Laptop laptop;
     private int age;
 
     public Dev(int age){
@@ -20,8 +21,14 @@ public class Dev {
         System.out.println("Dev Constructor");
     }
 
+    public void setLaptop(Laptop laptop){
+        this.laptop=laptop;
+    }
+
     public void build(){
         System.out.println("Working on Awesome Project");
+        laptop.compile();
+
     }
 
 }
