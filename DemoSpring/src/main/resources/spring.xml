@@ -6,15 +6,17 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
 
         <bean id="dev" class="org.example.Dev">
-            <!--   <property name="age" value="14" />      -->
+            <!--  <property name="age" value="14" />   -->
 
-            <!--    <constructor-arg name="age" value="22" />    -->
+              <constructor-arg name="age" value="22" />
 
-                <property name="laptop" ref="lap1" />
+             <!--   <property name="laptop" ref="lap1" />        -->
 
         </bean>
 
         <bean id="dev1" class="org.example.Dev">
+
+                <constructor-arg name="laptop" ref="lap1" />
 
         </bean>
 
