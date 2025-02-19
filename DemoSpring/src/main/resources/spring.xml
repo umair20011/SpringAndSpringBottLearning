@@ -1,0 +1,10 @@
+
+
+
+ <beans>
+
+     <bean id="dve" class="org.example.Dev">
+
+     </bean>
+
+ </beans>
