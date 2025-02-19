@@ -4,6 +4,10 @@ public class Dev {
 
     private int age;
 
+    public Dev(int age){
+        this.age=age;
+    }
+
     public void setAge(int age){
         this.age=age;
     }
