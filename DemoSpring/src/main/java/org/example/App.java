@@ -9,7 +9,7 @@ public class App
 
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
 
-        Dev obj=context.getBean(Dev.class);
+        Dev obj=(Dev)context.getBean("dev");
         obj.build();
 
     }
