@@ -4,6 +4,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
         <bean id="dev" class="org.example.Dev">
+             <property name="com" ref="lap1" />
+        </bean>
+
+        <bean id="lap1" class="org.example.Laptop">
+
+        </bean>
+
+        <bean id="desk1" class="org.example.Desktop">
 
         </bean>
 
