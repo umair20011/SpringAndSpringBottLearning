@@ -21,4 +21,9 @@ public class ProductController {
 
     }
 
+    @RequestMapping("/")
+    public String greet(){
+        return "Welcome to my Product site";
+    }
+
 }
