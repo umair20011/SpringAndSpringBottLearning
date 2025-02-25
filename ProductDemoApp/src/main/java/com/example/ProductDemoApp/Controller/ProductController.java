@@ -3,6 +3,7 @@ package com.example.ProductDemoApp.Controller;
 import com.example.ProductDemoApp.Model.Product;
 import com.example.ProductDemoApp.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,7 +28,7 @@ public class ProductController {
         return "Welcome to my Product site";
     }
 
-    @RequestMapping("/product/{prodId}")
+    @GetMapping("/product/{prodId}")
     public Product getProduct(@PathVariable int prodId){
         return productService.getProduct(prodId);
     }
