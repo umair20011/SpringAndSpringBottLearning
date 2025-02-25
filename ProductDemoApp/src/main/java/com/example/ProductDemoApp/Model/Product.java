@@ -12,4 +12,7 @@ public class Product {
     private String prodName;
     private int price;
 
+    public int getProdId() {
+        return prodId;
+    }
 }
