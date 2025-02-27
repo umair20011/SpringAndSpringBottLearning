@@ -32,8 +32,17 @@ public class ProductService {
         }
         return new Product(000,"No Item Found",000);
     }
-    
+
     public void addProduct(Product prod){
+        products.add(prod);
+    }
+
+    public void updateProduct(Product prod){
+        for(int i=0;i<products.size();i++){
+            if(products.get(i).getProdId()==prod.getProdId()){
+                products.set(i,prod);
+            }
+        }
         products.add(prod);
     }
 }

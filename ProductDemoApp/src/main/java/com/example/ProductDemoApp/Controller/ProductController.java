@@ -35,4 +35,9 @@ public class ProductController {
         productService.addProduct(prod);
     }
 
+    @PutMapping("/product")
+    public void updateProduct(@RequestBody Product prod){
+        productService.updateProduct(prod);
+    }
+
 }
