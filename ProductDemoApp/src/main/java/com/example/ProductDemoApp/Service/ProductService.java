@@ -45,4 +45,12 @@ public class ProductService {
         }
         products.add(prod);
     }
+
+    public void deleteProduct(int prodId){
+        for(int i=0;i<products.size();i++){
+            if(products.get(i).getProdId()==prodId){
+                products.remove(products.get(i));
+            }
+        }
+    }
 }
