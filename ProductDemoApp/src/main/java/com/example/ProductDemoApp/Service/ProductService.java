@@ -32,4 +32,8 @@ public class ProductService {
         }
         return new Product(000,"No Item Found",000);
     }
+    
+    public void addProduct(Product prod){
+        products.add(prod);
+    }
 }

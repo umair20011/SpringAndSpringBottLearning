@@ -3,10 +3,7 @@ package com.example.ProductDemoApp.Controller;
 import com.example.ProductDemoApp.Model.Product;
 import com.example.ProductDemoApp.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,4 +29,10 @@ public class ProductController {
     public Product getProduct(@PathVariable int prodId){
         return productService.getProduct(prodId);
     }
+
+    @PostMapping("/product")
+    public void addProduct(@RequestBody Product prod){
+        productService.addProduct(prod);
+    }
+
 }
